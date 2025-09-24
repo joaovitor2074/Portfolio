@@ -36,6 +36,8 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
+
+        <Route path="/Portfolio" element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<SobreMim />} />
         <Route path="/projetos" element={<Projetos />} />
