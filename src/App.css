@@ -1,0 +1,83 @@
+/* -------------------- RESET -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+  color: #0d1b2a;
+  line-height: 1.6;
+}
+
+/* Links padrão */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* -------------------- APP CONTAINER -------------------- */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* -------------------- MAIN CONTENT -------------------- */
+main {
+  flex: 1;
+  padding: 2rem 4rem;
+}
+
+/* -------------------- TITLES -------------------- */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #0d1b2a;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* -------------------- BUTTONS BASE -------------------- */
+button {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* -------------------- UTILITIES -------------------- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* -------------------- RESPONSIVO -------------------- */
+@media (max-width: 768px) {
+  main {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}

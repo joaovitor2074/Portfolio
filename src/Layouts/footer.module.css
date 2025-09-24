@@ -1,0 +1,44 @@
+.footer {
+  background: linear-gradient(180deg, #1e293b, #0f172a);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  border-top: 2px solid #1f2937;
+  position: relative;
+  z-index: 10;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.socials a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+/* Cores oficiais no hover */
+.github:hover {
+  color: #6e5494; /* GitHub roxo */
+}
+
+.linkedin:hover {
+  color: #0077b5; /* LinkedIn azul */
+}
+
+.instagram:hover {
+  color: #e1306c; /* Instagram rosa */
+}
+
+.email:hover {
+  color: #ea4335; /* Gmail vermelho */
+}
+
+.copy {
+  font-size: 0.9rem;
+  color: #aaa;
+}

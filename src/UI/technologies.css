@@ -1,0 +1,74 @@
+.technologies {
+  text-align: center;
+  padding: 3rem 1rem;
+  
+}
+
+
+
+.tech2{
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.dtech2{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.tecnology-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  display: flex;
+}
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+  cursor: default;
+  text-align: center;
+  position: relative;
+
+}
+
+.tech:hover {
+  transform: scale(1.08);
+}
+
+.icon {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* cores oficiais */
+.html { color: #e34f26; }
+.css { color: #1572b6; }
+.js { color: #f7df1e; }
+.react { color: #61dafb; }
+.tailwind { color: #38bdf8; }
+.node { color: #339933; }
+.github { color: #6e5494; }
+.mysql { color: #00758f; }     /* MySQL */
+.wordpress { color: #21759b; } /* WordPress */
+
+/* efeito extra no hover */
+.tech:hover .icon {
+  transform: translateY(-6px) scale(1.05);
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.12));
+}
+
+.tech span {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 0.25rem;
+}

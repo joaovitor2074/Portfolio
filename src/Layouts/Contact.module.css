@@ -1,0 +1,70 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza horizontalmente */
+  justify-content: center; /* centraliza verticalmente se precisar */
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+  color: #fff;
+  gap: 1.5rem;
+  margin-top:0;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #60a5fa; /* destaque azul */
+}
+
+.contact p {
+  font-size: 1.2rem;
+  color: #cbd5e1; /* texto mais claro */
+  margin-bottom: 2rem;
+}
+
+.contactBtn {
+  background-color: #60a5fa;
+  color: #0f172a;
+  font-weight: 700;
+  padding: 0.8rem 2rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.contactBtn:hover {
+  background-color: #3b82f6; /* azul mais forte no hover */
+  transform: scale(1.05);
+}
+.socials {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2.5rem; /* 🔹 controla o tamanho dos ícones */
+}
+
+.socials a {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+  opacity: 0.85;
+}
+
+/* 🔹 Cores individuais para cada ícone */
+.github {
+  color: #fff; /* GitHub geralmente é branco/preto */
+}
+
+.linkedin {
+  color: #0a66c2; /* Azul oficial do LinkedIn */
+}
+
+.instagram {
+  color: #C13584
+  
+}

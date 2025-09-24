@@ -1,0 +1,17 @@
+Em 2023 tive meu primeiro contato com a programação enquanto trabalhava de forma informal em uma loja de informática. Nos momentos livres, aproveitava para estudar lógica e JavaScript e, em apenas oito meses, consegui montar meu próprio computador, o que me permitiu dedicar ainda mais tempo aos estudos em casa.
+
+Apesar da pouca idade na época (13/14 anos), passei a investir mais de 10 horas por dia estudando, principalmente nas férias. Foi nesse período que descobri minha verdadeira paixão: aprender e criar soluções através da programação.
+
+Ao longo da minha trajetória, enfrentei desafios pessoais, inclusive a perda de um familiar, que me afastou temporariamente dos estudos. Porém, no início de 2025 retomei com ainda mais foco e determinação, e hoje sigo firme no meu objetivo de construir uma carreira sólida na área de tecnologia.
+
+Atualmente tenho 16 anos e moro em Codó, no Maranhão. Sou estudante do Instituto Federal do Maranhão (IFMA), no curso técnico de Informática, e bolsista CNPq em um projeto de pesquisa que alcançou nota 98/100 em sua avaliação. Além disso, já realizei freelas reais, como o desenvolvimento de um site profissional para a diretora da minha escola, e participo com frequência de reuniões e ambientes profissionais — experiências que têm ampliado minha visão e maturidade na área.
+
+Durante minha formação escolar, fui reconhecido diversas vezes pelo meu desempenho, recebendo 9 certificados de aluno destaque em escolas militares e cívico-militares. Também concluí cursos de informática básica e avançada, além de inglês em nível básico/intermediário, sempre buscando ampliar meus conhecimentos e habilidades.
+
+No meu tempo livre, gosto de estudar, desenvolver projetos pessoais e explorar novas tecnologias. Sou disciplinado, resiliente e curioso, características que me impulsionam a evoluir constantemente.
+
+Meu próximo objetivo é conquistar uma oportunidade de estágio em programação, para aplicar na prática todo o conhecimento que venho adquirindo. Mais do que ingressar no mercado de trabalho, quero contribuir com soluções que gerem impacto positivo na minha comunidade e, futuramente, participar de projetos de grande alcance.
+
+Ao longo dessa jornada, também desenvolvi conhecimentos práticos em diversas tecnologias. Tenho experiência com HTML, CSS e JavaScript, além de trabalhar com Node.js no backend e React no frontend. Utilizo MySQL para banco de dados e já atuei com WordPress em projetos reais. Para estilização, tenho familiaridade com Tailwind CSS, o que me permite construir interfaces modernas, responsivas e bem estruturadas.
+
+Meus próximos passos são aprofundar meus estudos em Cibersegurança, além de aprender Java e Python, ampliando meu leque de habilidades tanto em desenvolvimento quanto em áreas estratégicas da tecnologia.
