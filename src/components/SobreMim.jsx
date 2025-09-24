@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo } from "react";
 import { loadSlim } from "@tsparticles/slim";
+import Foto from "../img/foto.jpg";
+
 import {
   FaHtml5,
   FaCss3Alt,
@@ -96,101 +98,80 @@ const SobreMim = () => {
     { icon: <FaLock size={50} />, color: "#ff4444" },
   ];
 
-  return (
+   return (
     <section className={styles.about}>
       <Particles id="tsparticles" options={options} />
-      {/* Partículas de fundo */}
-       <div>
-      <Particles
-        id="tsparticles"
-        init={Particles}
-        options={{
-          background: {
-            color: "#0f172a"
-          },
-          particles: {
-            number: { value: 80 },
-            size: { value: 3 },
-            move: { enable: true, speed: 2 },
-            links: { enable: true, color: "#2e81ffff" }
-          }
-        }}
-      />
-      {/* resto do conteúdo Sobre Mim */}
-    </div>
 
       <motion.div
-  className={styles.container}
-  initial={{ opacity: 0, y: 50 }}
-  animate={{ opacity: 1, y: 0 }} // animação imediata
-  transition={{ duration: 0.5, ease: "easeOut" }}
->
-  <motion.h2
-    className={styles.title}
-    initial={{ scale: 0.8, rotate: -5, opacity: 0 }}
-    animate={{ scale: 1, rotate: 0, opacity: 1 }}
-    whileHover={{ scale: 1.05 }}
-    transition={{ duration: 0.8, type: "spring" }}
-  >
-    Sobre mim
-  </motion.h2>
-
-  {/* Textos */}
-  {textos.map((texto, i) => (
-    <motion.p
-      key={i}
-      className={styles.text}
-      initial={{ opacity: 0, x: i % 2 === 0 ? -50 : 50 }}
-      animate={{ opacity: 1, x: 0 }} // animação imediata
-      whileHover={{ scale: 1.02 }}
-      transition={{ delay: i * 0.1, duration: 0.6, ease: "easeOut" }} // delays menores para aparecer rápido
-    >
-      {texto}
-    </motion.p>
-  ))}
-
-  {/* Tecnologias */}
-  <motion.div
-    className={styles.techs}
-    initial={{ opacity: 0, scale: 0.8 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ staggerChildren: 0.1 }} // animação em sequência
-  >
-    {tecnologias.map((tech, i) => (
-      <motion.div
-        key={i}
-        className={styles.icon}
-        style={{ color: tech.color }}
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: [0, -5, 0] }}
-        transition={{ duration: 1.5, repeat: Infinity, repeatType: "mirror", delay: i * 0.1 }}
-        whileHover={{ scale: 1.3, rotate: 10 }}
-        whileTap={{ scale: 0.9 }}
+        className={styles.container}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        {tech.icon}
+        {/* --- Área da Imagem --- */}
+        <motion.div
+          className={styles.imageContainer}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          whileHover={{ scale: 1.05, rotate: 2 }}
+        >
+          <img
+            src={Foto}
+            alt="Minha foto"
+            className={styles.image}
+          />
+        </motion.div>
+
+        {/* --- Conteúdo --- */}
+        <div className={styles.content}>
+          <motion.h2
+            className={styles.title}
+            initial={{ scale: 0.8, rotate: -5, opacity: 0 }}
+            animate={{ scale: 1, rotate: 0, opacity: 1 }}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.8, type: "spring" }}
+          >
+            Sobre mim
+          </motion.h2>
+
+          {textos.map((texto, i) => (
+            <motion.p
+              key={i}
+              className={styles.text}
+              initial={{ opacity: 0, x: i % 2 === 0 ? -50 : 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              whileHover={{ scale: 1.02 }}
+              transition={{ delay: i * 0.1, duration: 0.6 }}
+            >
+              {texto}
+            </motion.p>
+          ))}
+
+          {/* Tecnologias */}
+          <motion.div className={styles.techs}>
+            {tecnologias.map((tech, i) => (
+              <motion.div
+                key={i}
+                className={styles.icon}
+                style={{ color: tech.color }}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: [0, -5, 0] }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatType: "mirror",
+                  delay: i * 0.1,
+                }}
+                whileHover={{ scale: 1.3, rotate: 10 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                {tech.icon}
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
       </motion.div>
-    ))}
-  </motion.div>
-  <motion.p
-    className={styles.text}
-    initial={{ opacity: 0, y: 30 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 0.3, duration: 0.8 }}
-  >
-
-  {"Ao longo dessa jornada, também desenvolvi conhecimentos práticos em diversas tecnologias. Tenho experiência com HTML, CSS e JavaScript, além de trabalhar com Node.js no backend e React no frontend. Utilizo MySQL para banco de dados e já atuei com WordPress em projetos reais. Para estilização, tenho familiaridade com Tailwind CSS, o que me permite construir interfaces modernas, responsivas e bem estruturadas."}
-  </motion.p>
-
-  <motion.p
-    className={styles.text}
-    initial={{ opacity: 0, y: 30 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 0.3, duration: 0.8 }}
-  >
-    {"Meus próximos passos são aprofundar meus estudos em Cibersegurança, além de aprender Java e Python, ampliando meu leque de habilidades tanto em desenvolvimento quanto em áreas estratégicas da tecnologia."}
-  </motion.p>
-</motion.div>
-
     </section>
   );
 };

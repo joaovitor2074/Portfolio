@@ -38,10 +38,10 @@ function App() {
       <Routes>
 
         <Route path="/Portfolio" element={<Home />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/sobre" element={<SobreMim />} />
-        <Route path="/projetos" element={<Projetos />} />
-        <Route path="/contato" element={<Contato />} />
+        <Route path="/Portfolio" element={<Home />} />
+        <Route path="/Portfolio/sobre" element={<SobreMim />} />
+        <Route path="/Portfolio/projetos" element={<Projetos />} />
+        <Route path="/Portfolio/contato" element={<Contato />} />
       </Routes>
       <Footer />
     </BrowserRouter>
